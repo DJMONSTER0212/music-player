@@ -2,3 +2,63 @@ body{
   background-color: black;
   color: #16FF00;
 }
+
+h1 {
+  position: relative;
+  color: "#16FF00";
+  font-weight: bold;
+  font-family: "Anonymous Pro", monospace;
+  letter-spacing: 7px;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 0%, 80%);
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1s infinite normal both,
+  blinkTextCursor 500ms infinite;
+}
+hr{
+  height: 2px;
+  background: #16FF00;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 240px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(244, 100%, 42%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+.na{
+  position: fixed;
+  right: 0;
+  color: "#16FF00";
+  /* font-size: 50px; */
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 64px;
+  background: linear-gradient(to right, hsl(120, 100%, 47%) 0, hsl(227, 97%, 47%) 10%, hsl(117, 99%, 49%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5S infinite linear;
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 100px;
+  }
+}
