@@ -2,7 +2,7 @@ import React from 'react'
 function Navbar() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg" style={{backgroundColor:'black',textAlign:"center"}}>
+            <nav className="navbar fixed-top navbar-expand-lg" style={{backgroundColor:'black',textAlign:"center"}}>
                 <div className="container-fluid">
                 <h1 style={{display:"block"}}>  <a className="navbar-brand" href="/" id="name" style={{color:"#16FF00"}}>DJ's Player<i className="fa-sharp fa-solid fa-headphones"></i></a></h1><br /> 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

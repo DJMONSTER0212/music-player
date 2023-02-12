@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  background-color: #000000;
   color: #16FF00;
 }
 
@@ -36,7 +36,7 @@ hr{
   }
 }
 .na{
-  position: fixed;
+  position: absolute;
   right: 0;
   color: "#16FF00";
   /* font-size: 50px; */
@@ -68,3 +68,19 @@ hr{
   .grow:hover {
     transform: scale(1.1);
   }
+
+  img{
+    height: 150px;
+  }
+  
+.progress-container {
+  width: 100%;
+  height: 5px;
+  /* background: #ccc; */
+}
+
+.progress-bar {
+  height: 5px;
+  background: #04AA6D;
+  width: 0%;
+}
